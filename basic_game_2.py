@@ -57,7 +57,10 @@ while running:
     Screen.fill((0,0,0))
 
     # Draw the player on the screen
-    Screen.blit(player.surf,(SCREEN_WIDTH/2,SCREEN_HEIGHT/2))
+    # Screen.blit(player.surf,(SCREEN_WIDTH/2,SCREEN_HEIGHT/2))
+
+    #  Draw top left corner
+    Screen.blit(player.surf,player.rect)
 
     # Update the displaye
     pygame.display.flip()
